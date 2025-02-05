@@ -1,0 +1,11 @@
+#
+# awesome zsh plugins: https://github.com/unixorn/awesome-zsh-plugins
+# antibody: https://getantibody.github.io
+# run 'source ~/.zsh_plugins.sh' to update
+#
+romkatv/powerlevel10k
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-syntax-highlighting
+# zpm-zsh/clipboard
+# caarlos0-graveyard/ports
+# agkozak/zsh-z
