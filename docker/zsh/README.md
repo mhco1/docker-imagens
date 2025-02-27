@@ -2,11 +2,6 @@
 
 Imagem Docker com o shell Zsh configurado para melhorar a experiência no terminal com outras imagens
 
-> **obs**: Caso precise de recarregar as configurações do zsh, use:
-> ```bash
-> source ~/.zshrc
-> ```
-
 ## Pacotes instalados
 
 - **oh-my-szh**: Gerencia as configurações do zsh
