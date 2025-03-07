@@ -35,13 +35,18 @@ RUN git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 RUN ~/.fzf/install
 
 # configura o antibody
-RUN echo "\n\n# antibody\n\nsource <(antibody init)\nantibody bundle < ~/.zsh-plugins" >> ~/.zshrc
+RUN echo "\n\n# antibody\n\nsource <(antibody init)\nantibody bundle < ~/.zsh-plugins\n\n" >> ~/.zshrc
 
 # copia o arquivo de plugins
 RUN cp ./zsh-plugins ~/.zsh-plugins
 
 # copia configuração do pk10
-RUN cp -r ./.powerlevel10k ~/.powerlevel10k
+RUN echo "\n\n# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.\n\n[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh\n\n" >> ~/.zshrc
+RUN cp -r ./p10k.zsh ~/.p10k.zsh
+
+# adiciona as configurações do zshrc
+RUN echo "\n\n" >> ~/.zshrc
+RUN cat ./zshrc >> ~/.zshrc
 
 WORKDIR /home/$USER
 

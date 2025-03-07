@@ -1,0 +1,7 @@
+#
+# zshrc personal configuration
+#
+
+alias cp="cp -i"
+alias cp="rm -i"
+alias cp="mv -i"
